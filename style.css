@@ -1,0 +1,300 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+.bodyWrap {
+    width: 100%;
+    height: 100%;
+}
+
+.sectionWrap {
+    height: 80vh;
+    width: 100%;
+    position: relative;
+}
+
+.section1 {
+    height: 100%;
+    background: linear-gradient(to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    width: 100%;
+    border-radius: 0px 0px 70% 40%;
+    position: absolute;
+    left: -50%;
+    top: 0px;
+}
+
+.section2 {
+    width: 70%;
+    height: auto;
+    font-size: 8px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 10px 10px 50px 10px hsl(0, 0%, 82%);
+    position: absolute;
+    left: 65%;
+    top: 10%;
+}
+
+.section2Wrapper {
+    background: hsl(270, 20%, 96%);
+    border-radius: 20px;
+    padding: 15px;
+    padding-top: revert;
+    height: 100%;
+}
+
+.section2Wrapper > div {
+    margin-bottom: 5px;
+    padding: 5px 10px;
+}
+
+.section2Wrapper > div:first-child {
+    width: calc(100% + 30px);
+    background: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    position: relative;
+    margin-left: -15px;
+    padding-top: 20px;
+    border-radius: 20px 20px 6px 6px;
+}
+
+.screenTop {
+    width: 50%;
+    height: 30px;
+    background: hsl(0, 0%, 100%);
+    border-radius: 12px;
+    position: absolute;
+    top: -10px;
+    left: 25%;
+}
+
+.section2Wrapper .userDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userDetails i {
+    color: white;
+}
+
+.userDetails .userInfo {
+    display: flex;
+    gap: 15px;
+    flex: 6;
+    color: hsl(276, 100%, 81%);
+    white-space: nowrap;
+    align-items: center;
+}
+
+.userDetails .userName h3 {
+    font-weight: 500;
+    padding-bottom: 4px;
+    font-size: 12px;
+}
+
+.userDetails .hamburgerBtn {
+    flex: 4;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.userInfo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid hsl(270, 20%, 96%)
+}
+
+.section2Wrapper .chatStyle1 {
+    width: 60%;
+    border-radius: 15px;
+    background: hsl(290, 39%, 91%);
+    color: hsl(276, 55%, 52%);
+}
+
+span.desktop {
+    display: none;
+}
+
+.section2Wrapper div.flexEnd {
+    display: flex;
+    justify-content: flex-end;
+    width: revert;
+    background: revert;
+    padding: revert;
+}
+
+.section2Wrapper div.flexEnd div {
+    width: 60%;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.section2Wrapper div:nth-child(6) .chatStyle2{
+    width: auto;
+}
+
+.section2Wrapper div.flexEnd .chatStyle2 {
+    background: hsl(0, 0%, 100%);
+    color: hsl(271, 15%, 43%);
+}
+
+#imageDiv div {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+#imageDiv img {
+    width: 30px;
+    height: 30px;
+    border-radius: 40%;
+}
+
+.section2Wrapper .pricing {
+    width: 70%;
+    border-radius: 10px 10px 10px 2px;
+    display: flex;
+    justify-content: space-between;
+    color: hsl(276, 100%, 81%);
+    background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+
+.serviceTime {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.section2Wrapper .circleButton {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid hsl(289, 100%, 72%);
+}
+
+.section2Wrapper .price {
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.section2Wrapper .messageBox {
+    border-radius: 20px;
+    background: hsl(0, 0%, 100%);
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.messageBox input {
+    border: none;
+    display: inline;
+    max-width: 80%;
+}
+
+.messageBox input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: hsl(206, 6%, 79%);
+}
+
+.messageBox i {
+    background: hsl(271, 36%, 24%);
+    color: white;
+    border-radius: 50%;
+    padding: 6px 8px;
+}
+
+.section3 {
+    margin-top: 150px;
+    padding: 10px 13%;
+    text-align: center;
+}
+
+.section3 h2 {
+    margin-bottom: 20px;
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: hsl(271, 36%, 24%);
+}
+
+.section3 p {
+    line-height: 1.8rem;
+    color: hsl(270, 7%, 64%);
+}
+
+.lastDiv {
+    display: none;
+    height: 90%;
+    background: hsl(0, 0%, 99%);
+    width: 35%;
+    position: absolute;
+    bottom: 0%;
+    right: -17.5%;
+    border-radius: 50% 50% 0px 0px;
+    z-index: -1;
+}
+
+@media screen and (min-width: 900px) {
+    .bodyWrap {
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+    }
+
+        .sectionWrap {
+            height: 90vh;
+            flex: 3;
+        }
+        .section1 {
+            height: 100%;
+            left: -15%;
+            width: 100%;
+            border-radius: 0px 0px 52% 52%;
+        }
+    
+        .section2 {
+            left: 80%;
+            width: 90%;
+            top: revert;
+            bottom: 5%;
+        }
+
+        span.desktop {
+            display: revert;
+        }
+
+        span.mobile {
+            display: none;
+        }
+    
+        .section3 {
+            flex: 3;
+            text-align: start;
+            margin-top: 40vh;
+            padding-top: revert;
+        }
+
+        .lastDiv {
+            display: block;
+        }
+
+}
+
+@media screen and (min-width: 1100px) {
+    .section2 {
+        width: 65%;
+    }
+}
