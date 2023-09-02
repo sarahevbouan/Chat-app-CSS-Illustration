@@ -7,17 +7,15 @@
 body {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
-    overflow-x: hidden;
 }
 
 .bodyWrap {
-    width: 100%;
-    height: 100%;
+    position: relative;
+    overflow-x: hidden;
 }
 
 .sectionWrap {
-    height: 80vh;
-    width: 100%;
+    height: 60vh;
     position: relative;
 }
 
@@ -38,18 +36,16 @@ body {
     border-radius: 20px;
     padding: 10px;
     background-color: white;
-    box-shadow: 10px 10px 50px 10px hsl(0, 0%, 82%);
+    box-shadow: 10px 10px 50px 10px hsl(0, 0%, 90%);
     position: absolute;
     left: 65%;
-    top: 10%;
+    bottom: -10%;
 }
 
 .section2Wrapper {
     background: hsl(270, 20%, 96%);
     border-radius: 20px;
-    padding: 15px;
-    padding-top: revert;
-    height: 100%;
+    padding: 0px 15px 15px 15px;
 }
 
 .section2Wrapper > div {
@@ -83,7 +79,7 @@ body {
 }
 
 .userDetails i {
-    color: white;
+    color: hsl(0, 0%, 100%);
 }
 
 .userDetails .userInfo {
@@ -99,6 +95,7 @@ body {
     font-weight: 500;
     padding-bottom: 4px;
     font-size: 12px;
+    color: hsl(270, 20%, 96%);
 }
 
 .userDetails .hamburgerBtn {
@@ -128,8 +125,6 @@ span.desktop {
 .section2Wrapper div.flexEnd {
     display: flex;
     justify-content: flex-end;
-    width: revert;
-    background: revert;
     padding: revert;
 }
 
@@ -165,6 +160,7 @@ span.desktop {
     border-radius: 10px 10px 10px 2px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: hsl(276, 100%, 81%);
     background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
 }
@@ -183,7 +179,7 @@ span.desktop {
 }
 
 .section2Wrapper .price {
-    color: hsl(0, 0%, 100%);
+    color: hsl(270, 20%, 96%);
     font-weight: 500;
     font-size: 10px;
 }
@@ -198,12 +194,8 @@ span.desktop {
 
 .messageBox input {
     border: none;
-    display: inline;
     max-width: 80%;
-}
-
-.messageBox input:focus {
-    outline: none;
+    background: transparent;
 }
 
 ::placeholder {
@@ -218,8 +210,8 @@ span.desktop {
 }
 
 .section3 {
-    margin-top: 150px;
-    padding: 10px 13%;
+    margin-top: 12vh;
+    padding: 10px 12%;
     text-align: center;
 }
 
@@ -236,16 +228,17 @@ span.desktop {
 }
 
 .lastDiv {
-    display: none;
-    height: 90%;
-    background: hsl(0, 0%, 99%);
-    width: 35%;
+    height: 60vh;
+    background: hsl(0, 0%, 97%);
+    width: 100%;
     position: absolute;
     bottom: 0%;
-    right: -17.5%;
+    right: -50%;
     border-radius: 50% 50% 0px 0px;
     z-index: -1;
 }
+
+
 
 @media screen and (min-width: 900px) {
     .bodyWrap {
@@ -255,20 +248,18 @@ span.desktop {
     }
 
         .sectionWrap {
-            height: 90vh;
+            height: 100vh;
             flex: 3;
         }
         .section1 {
-            height: 100%;
+            height: 90%;
             left: -15%;
-            width: 100%;
             border-radius: 0px 0px 52% 52%;
         }
     
         .section2 {
             left: 80%;
             width: 90%;
-            top: revert;
             bottom: 5%;
         }
 
@@ -283,12 +274,14 @@ span.desktop {
         .section3 {
             flex: 3;
             text-align: start;
-            margin-top: 40vh;
-            padding-top: revert;
+            margin-top: 50vh;
+            padding: revert 12%;
         }
 
         .lastDiv {
-            display: block;
+            width: 35%;
+            height: 90%;
+            right: -17.5%;
         }
 
 }
@@ -296,5 +289,23 @@ span.desktop {
 @media screen and (min-width: 1100px) {
     .section2 {
         width: 65%;
+    }
+}
+
+@media screen and (max-height: 580px) and (max-width: 899px) {
+    .section2 {
+        bottom: revert;
+        top: 10px;
+    }
+
+    .section3 {
+        margin-top: 40vh;
+    }
+}
+
+@media screen and (max-height: 580px) and (min-width: 900px) {
+    .section2 {
+        bottom: revert;
+        top: 10px;
     }
 }
